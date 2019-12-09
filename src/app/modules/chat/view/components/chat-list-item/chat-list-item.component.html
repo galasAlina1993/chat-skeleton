@@ -1,0 +1,12 @@
+<div class="chat-item">
+    <div class="chat-item-content">
+        <img class="chat-item-image" [src]="chatRoom.sender.avatarUrl | safe: 'resourceUrl'" alt="avatar">
+        <div class="message-data">
+            <h1>{{chatRoom.sender.getFullName()}}</h1>
+            <p>{{chatRoom.lastMessage.text}}</p>
+        </div>
+    </div>
+    <button mat-raised-button [routerLink]="chatRoom.id">Go to chat</button>
+    <mat-divider></mat-divider>
+</div>
+

@@ -1,0 +1,9 @@
+<mat-card class="chat-card">
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item class="list-item-wrapper" *ngFor="let room of chatRooms">
+                <app-chat-list-item class="list-item" [chatRoom]="room"></app-chat-list-item>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>    
+</mat-card>   

@@ -1,0 +1,14 @@
+.chat-card {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #eee;
+
+    .list-item-wrapper {
+        height: auto;  
+        width: 100%;
+
+        .list-item {
+            width: 100%;
+        }
+    }
+}

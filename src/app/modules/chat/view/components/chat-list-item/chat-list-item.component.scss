@@ -1,0 +1,26 @@
+.chat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    width: 100%;
+    cursor: pointer;
+
+    .chat-item-image {
+        margin: 0 2em 0 .5em;
+        border-radius: 50%;
+        max-width: 70px;
+        max-height: 70px;
+    }
+    .chat-item-content {
+        display: flex;
+        justify-content: flex-start;
+        h1 {
+            font-size: 1em;
+        }
+        
+        p {
+            font-style: italic;
+        }
+    }
+}

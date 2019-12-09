@@ -1,0 +1,21 @@
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .chat-person {
+    display: flex;
+    align-items: center;
+    width: 300px;
+
+    .chat-person-image {
+      max-width: 50px;
+      max-height: 50px;
+      border-radius: 50%;
+    }
+
+    .chat-person-name {
+      padding: 0 1em;
+    }
+  }
+}

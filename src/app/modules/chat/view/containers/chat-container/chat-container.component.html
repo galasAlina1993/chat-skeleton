@@ -1,0 +1,13 @@
+<app-chat-toolbar
+  [profile]="opponentProfile$ | async"
+></app-chat-toolbar>
+
+<mat-list dense class="conversation-history mat-typography">
+  <app-message
+    *ngFor="let msg of messages$ | async"
+    [msg]="msg"
+    [profile]="profile$ | async"
+  ></app-message>
+</mat-list>
+
+<app-chat-form (sendMsg)="onSendMessage($event)"></app-chat-form>

@@ -1,0 +1,14 @@
+<mat-list-item
+  [dir]="profile.id === msg.from.id ? 'rtl' : 'ltr'"
+>
+  <img matListAvatar
+       [src]="msg.from.avatarUrl | safe: 'resourceUrl'"
+       matTooltip="{{msg.from.getFullName()}}"
+       alt="">
+  <p [ngSwitch]="msg.type" [dir]="'ltr'">
+  <span *ngSwitchCase="0">
+    {{msg.text}}
+  </span>
+</mat-list-item>
+<p [dir]="profile.id === msg.from.id ? 'rtl' : 'ltr'" class="message-time">{{generateTime(msg.createdDate)}}</p>
+

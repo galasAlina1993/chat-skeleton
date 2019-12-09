@@ -1,0 +1,9 @@
+<form class="conversation-input" (submit)="sendMessage(text)">
+  <mat-form-field class="full-width">
+    <input class="message-box" matInput placeholder="Start chatting..." name="text" [(ngModel)]="text">
+  </mat-form-field>
+  <button type="submit" mat-icon-button [disabled]="!text">
+      <mat-icon matSuffix>send</mat-icon>
+  </button>
+  <mat-divider></mat-divider>
+</form>

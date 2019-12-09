@@ -1,0 +1,11 @@
+<mat-toolbar color="warn">
+  <div class="header-wrap">
+    <mat-toolbar-row>
+      <button mat-icon-button routerLink="/"><mat-icon>keyboard_backspace</mat-icon></button>
+    </mat-toolbar-row>
+    <div class="chat-person">
+      <p class="chat-person-name">{{profile.getFullName()}}</p>
+      <img class="chat-person-image" [src]="profile.avatarUrl | safe: 'resourceUrl'" alt="avatar">
+    </div>
+  </div>
+</mat-toolbar>
